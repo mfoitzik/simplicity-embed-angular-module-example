@@ -1,27 +1,25 @@
-# SimplicityEmbedAngularModuleExample
+# Simplicity Embed Angular Module Example (Angular 17)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+This project demonstrates the use of the Simplicity Embed&trade; web component in an Angular Module Component Project.
 
-## Development server
+There is a separate example available for demonstrating the use of the Simplicity Embed web component in an angular standalone project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Free Test License
+To use the Simplicity Embed&trade; web component you first need to obtain a free trial license or purchase a license. This is available at: https://www.simplicitywebtools.com.
 
-## Code scaffolding
+## Sample Widget
+This example references a vanilla JavaScript widget example that demonstrates 
+https://github.com/mfoitzik/SimplicityEmbedVanillaJS
+```
+git clone https://github.com/mfoitzik/SimplicityEmbedVanillaJS
+```
+Open the project in Visual Studio Code and run Live Server or run the code in your dev server of choice. You just need to pay attention to the URL/port it is running on as you will need top reference it later.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instructions
+```
+git clone https://github.com/mfoitzik/SimplicityEmbed-Angular-Standalone.git
+npm install
+ng serve --open
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please note: The <simplicity-embed> component in the app.components.html file references the setup file being at: http://localhost:5500/config.json, you may need to change the port numnber depending on what Live Server (or your dev server of choice) assigns as the port number.

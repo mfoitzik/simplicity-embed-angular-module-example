@@ -227,6 +227,18 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <div>
+        <button type="button" (click)=openSimplicityEmbed()>Open</button>
+      </div>
+      <div>
+        <button type="button" (click)=closeSimplicityEmbed()>Close</button>
+      </div>
+      <div>
+        <button type="button" (click)=sendCommand()>Send Command</button>
+      </div>
+      <div>
+        <button type="button" (click)=changeConfig()>Change Config</button>
+      </div>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -322,6 +334,16 @@
       </div>
     </div>
   </div>
+  <simplicity-embed
+    [attr.setup]="seSetup"
+    id="simplicity"
+    data-icon="heart"
+    data-count="7"
+    data-color="rgb(245, 241, 5)"
+    data-background="rgb(58,85,156)"
+    data-heading="Rate Me!"
+    (sbnotify) = "handleNotify($event)">
+  </simplicity-embed>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
