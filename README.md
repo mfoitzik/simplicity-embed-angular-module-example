@@ -22,4 +22,4 @@ npm install
 ng serve --open
 ```
 
-Please note: The <simplicity-embed> component in the app.components.html file references the setup file being at: http://localhost:5500/config.json, you may need to change the port numnber depending on what Live Server (or your dev server of choice) assigns as the port number.
+Please note: The <simplicity-embed> component in the app.components.html file references the setup file being at: http://localhost:5500/config.json, you may need to change the port numnber depending on what Live Server (or your dev server of choice) assigns as the port number. 
