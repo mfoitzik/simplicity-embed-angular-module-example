@@ -17,7 +17,7 @@ Open the project in Visual Studio Code and run Live Server or run the code in yo
 
 ## Instructions
 ```
-git clone https://github.com/mfoitzik/SimplicityEmbed-Angular-Standalone.git
+git clone https://github.com/mfoitzik/simplicity-embed-angular-module-example.git
 npm install
 ng serve --open
 ```
